@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Design - The Digital Ace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Header -->
+   <!-- Navbar -->
+<nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+  <a href="#" class="flex items-center space-x-2">
+    <img src="../images/logo.jpg" alt="The Digital Ace Logo" class="h-8">
+    <span class="text-2xl font-bold text-blue-600">The Digital Ace</span>
+  </a>
+</div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 items-center">
+  <a href="../index.html#services" class="hover:text-blue-600 transition">Services</a>
+  <a href="../index.html#portfolio" class="hover:text-blue-600 transition">Portfolio</a>
+  <a href="../index.html#about" class="hover:text-blue-600 transition">About</a>
+  <a href="../index.html#contact" class="hover:text-blue-600 transition">Contact</a>
+</nav>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          ☰
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-lg pb-4">
+  <nav class="flex flex-col items-center space-y-3 py-4">
+    <a href="../index.html#services" class="block w-full text-center py-2 hover:bg-gray-100 transition">Services</a>
+    <a href="../index.html#portfolio" class="block w-full text-center py-2 hover:bg-gray-100 transition">Portfolio</a>
+    <a href="../index.html#about" class="block w-full text-center py-2 hover:bg-gray-100 transition">About</a>
+    <a href="../index.html#contact" class="block w-full text-center py-2 hover:bg-gray-100 transition">Contact</a>
+  </nav>
+</div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById("menu-btn").addEventListener("click", function () {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+  });
+</script>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold opacity-0 translate-y-6">Creative Design</h1>
+      <p class="mt-4 text-lg opacity-0 translate-y-6">Transforming ideas into powerful visuals that captivate and convert.</p>
+      <a href="../index.html#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold shadow hover:bg-slate-100">Get a Custom Proposal</a>
+    </div>
+  </section>
+
+  <!-- About Creative Design -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+        <div class="fade-up">
+          <h2 class="text-3xl font-bold">Design That Inspires & Converts</h2>
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            Our creative design services go beyond aesthetics—we create visuals that resonate with your audience,
+            tell your brand story, and drive results. From branding to ad creatives, we make sure your identity
+            stands out in today’s competitive landscape.
+          </p>
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            Whether it’s social media graphics, website assets, or full brand identity systems, we ensure
+            consistency, clarity, and creativity in every design.
+          </p>
+        </div>
+        <div class="mt-8 md:mt-0 fade-up">
+          <img src="../images/creative-dgn-port.png"
+               alt="Creative Design Process"
+               class="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500" />
+        </div>
+      </div>
+
+      <!-- What's Included -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold text-center">What's Included?</h3>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="p-6 bg-slate-50 rounded-2xl shadow hover:shadow-lg transition">
+            <i data-lucide="pen-tool" class="w-8 h-8 text-blue-600"></i>
+            <h4 class="mt-4 font-semibold text-lg">Brand Identity</h4>
+            <p class="text-slate-600 mt-2">Logos, typography, and brand guidelines that define your business.</p>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-2xl shadow hover:shadow-lg transition">
+            <i data-lucide="image" class="w-8 h-8 text-green-600"></i>
+            <h4 class="mt-4 font-semibold text-lg">Social Media Creatives</h4>
+            <p class="text-slate-600 mt-2">Eye-catching graphics designed to boost engagement and reach.</p>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-2xl shadow hover:shadow-lg transition">
+            <i data-lucide="layout-dashboard" class="w-8 h-8 text-indigo-600"></i>
+            <h4 class="mt-4 font-semibold text-lg">Web & App Assets</h4>
+            <p class="text-slate-600 mt-2">Clean, modern visuals optimized for digital platforms.</p>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-2xl shadow hover:shadow-lg transition">
+            <i data-lucide="film" class="w-8 h-8 text-pink-600"></i>
+            <h4 class="mt-4 font-semibold text-lg">Ad Creatives</h4>
+            <p class="text-slate-600 mt-2">High-performing designs for Meta, Google, and LinkedIn ads.</p>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-2xl shadow hover:shadow-lg transition">
+            <i data-lucide="book" class="w-8 h-8 text-yellow-600"></i>
+            <h4 class="mt-4 font-semibold text-lg">Marketing Collateral</h4>
+            <p class="text-slate-600 mt-2">Brochures, pitch decks, and presentations that impress.</p>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-2xl shadow hover:shadow-lg transition">
+            <i data-lucide="palette" class="w-8 h-8 text-red-600"></i>
+            <h4 class="mt-4 font-semibold text-lg">Custom Illustrations</h4>
+            <p class="text-slate-600 mt-2">Unique, handcrafted visuals tailored to your brand’s tone.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Counters -->
+      <div class="mt-20 text-center">
+        <h2 class="text-3xl font-bold fade-up">Impact of Great Design</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
+          <div class="bg-blue-600 text-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+            <p class="text-4xl font-bold counter" data-target="150">0%</p>
+            <p class="mt-2 text-lg">Boost in Engagement</p>
+          </div>
+          <div class="bg-indigo-600 text-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+            <p class="text-4xl font-bold counter" data-target="60">0%</p>
+            <p class="mt-2 text-lg">Increase in CTR</p>
+          </div>
+          <div class="bg-pink-600 text-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+            <p class="text-4xl font-bold counter" data-target="90">0%</p>
+            <p class="mt-2 text-lg">Improved Brand Recall</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-slate-50 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold">Ready to Elevate Your Brand?</h2>
+      <p class="mt-4 text-lg text-slate-600">Let’s design visuals that inspire, engage, and convert.</p>
+      <a href="../index.html#contact" class="mt-6 inline-block bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold shadow hover:bg-blue-700 transition">Start Your Project</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
+      <p>&copy; 2025 The Digital Ace. All rights reserved.</p>
+      <div class="flex space-x-4 mt-4 sm:mt-0">
+        <a href="#" class="hover:text-blue-400"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+        <a href="#" class="hover:text-sky-400"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+        <a href="#" class="hover:text-blue-500"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    lucide.createIcons();
+
+    // Fade-up animation
+    gsap.utils.toArray(".fade-up").forEach((el) => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: "top 85%" },
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        ease: "power3.out"
+      });
+    });
+
+    // Hero fade-in
+    gsap.to("h1, h1 + p", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.3,
+      ease: "power3.out"
+    });
+
+    // Counter animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 30; 
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText.replace('%', '');
+        const inc = Math.ceil(target / speed);
+        if (count < target) {
+          counter.innerText = count + inc + "%";
+          setTimeout(updateCount, 40);
+        } else {
+          counter.innerText = target + "%";
+        }
+      };
+      updateCount();
+    });
+  </script>
+</body>
+</html>

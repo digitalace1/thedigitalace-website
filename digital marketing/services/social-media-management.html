@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Management - The Digital Ace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+   <!-- Navbar -->
+<nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+  <a href="#" class="flex items-center space-x-2">
+    <img src="../images/logo.jpg" alt="The Digital Ace Logo" class="h-8">
+    <span class="text-2xl font-bold text-blue-600">The Digital Ace</span>
+  </a>
+</div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 items-center">
+  <a href="../index.html#services" class="hover:text-blue-600 transition">Services</a>
+  <a href="../index.html#portfolio" class="hover:text-blue-600 transition">Portfolio</a>
+  <a href="../index.html#about" class="hover:text-blue-600 transition">About</a>
+  <a href="../index.html#contact" class="hover:text-blue-600 transition">Contact</a>
+</nav>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          ☰
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+   <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-lg pb-4">
+  <nav class="flex flex-col items-center space-y-3 py-4">
+    <a href="../index.html#services" class="block w-full text-center py-2 hover:bg-gray-100 transition">Services</a>
+    <a href="../index.html#portfolio" class="block w-full text-center py-2 hover:bg-gray-100 transition">Portfolio</a>
+    <a href="../index.html#about" class="block w-full text-center py-2 hover:bg-gray-100 transition">About</a>
+    <a href="../index.html#contact" class="block w-full text-center py-2 hover:bg-gray-100 transition">Contact</a>
+  </nav>
+</div>
+</nav>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById("menu-btn").addEventListener("click", function () {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+  });
+</script>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-20 text-center animate-fadeInUp">
+    <h1 class="text-4xl sm:text-5xl font-bold">Social Media Management</h1>
+    <p class="mt-4 text-lg">Build your brand and engage with your audience on every platform.</p>
+    <a href="../index.html#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold shadow hover:bg-slate-100">Get a Custom Proposal</a>
+  </section>
+
+  <!-- Strategy Section -->
+  <section class="py-16 bg-white animate-fadeInUp">
+    <div class="max-w-7xl mx-auto px-6 md:grid md:grid-cols-2 md:gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold">From Strategy to Execution</h2>
+        <p class="mt-4 text-slate-700 leading-relaxed">
+          Our social media management service covers every aspect of your brand's presence, from creating a
+          comprehensive strategy to daily content posting and audience engagement. We craft content that
+          resonates with your target audience, grows your followers, and drives real business results.
+        </p>
+        <p class="mt-4 text-slate-700 leading-relaxed">
+          We specialize in platforms like Instagram, Facebook, LinkedIn, and Twitter, ensuring your brand
+          is where your customers are. Our data-driven approach means we constantly optimize for the best
+          performance, so you get a great return on your investment.
+        </p>
+      </div>
+      <div class="mt-8 md:mt-0">
+        <img src="../images/smm-updated.png"
+             alt="Social Media Strategy"
+             class="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300" />
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included -->
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+  <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center">
+    <i data-lucide="check-circle" class="w-10 h-10 text-blue-600 mx-auto"></i>
+    <h4 class="mt-4 font-semibold text-lg">Custom Social Media Strategy</h4>
+    <p class="text-slate-600 mt-2">Tailored strategies to match your brand goals and target audience.</p>
+  </div>
+  <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center">
+    <i data-lucide="calendar" class="w-10 h-10 text-green-600 mx-auto"></i>
+    <h4 class="mt-4 font-semibold text-lg">Content Calendar & Scheduling</h4>
+    <p class="text-slate-600 mt-2">Plan and publish posts with consistency and impact.</p>
+  </div>
+  <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center">
+    <i data-lucide="image" class="w-10 h-10 text-indigo-600 mx-auto"></i>
+    <h4 class="mt-4 font-semibold text-lg">Daily Post Creation</h4>
+    <p class="text-slate-600 mt-2">Engaging designs, reels & captions crafted daily.</p>
+  </div>
+  <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center">
+    <i data-lucide="users" class="w-10 h-10 text-pink-600 mx-auto"></i>
+    <h4 class="mt-4 font-semibold text-lg">Community Management</h4>
+    <p class="text-slate-600 mt-2">Engage with followers and build brand trust.</p>
+  </div>
+  <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center">
+    <i data-lucide="bar-chart" class="w-10 h-10 text-yellow-600 mx-auto"></i>
+    <h4 class="mt-4 font-semibold text-lg">Monthly Reports</h4>
+    <p class="text-slate-600 mt-2">Data-driven performance tracking & insights.</p>
+  </div>
+  <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center">
+    <i data-lucide="search" class="w-10 h-10 text-red-600 mx-auto"></i>
+    <h4 class="mt-4 font-semibold text-lg">Competitor Analysis</h4>
+    <p class="text-slate-600 mt-2">Stay ahead by analyzing your competitors’ strategies.</p>
+  </div>
+</div>
+
+
+  <!-- Results with Animated Counters -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 py-16 text-white text-center animate-fadeInUp">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10">Proven Results</h2>
+      <div class="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+
+        <div>
+          <h3 class="text-5xl font-extrabold counter" data-target="10000">0+</h3>
+          <p class="mt-2 text-lg">Followers Gained</p>
+        </div>
+
+        <div>
+          <h3 class="text-5xl font-extrabold counter" data-target="85">0%</h3>
+          <p class="mt-2 text-lg">Engagement Rate Boost</p>
+        </div>
+
+        <div>
+          <h3 class="text-5xl font-extrabold counter" data-target="1200">0+</h3>
+          <p class="mt-2 text-lg">Posts Managed</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-slate-50 text-center animate-fadeInUp">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold">Ready to Elevate Your Social Media?</h2>
+      <p class="mt-4 text-lg text-slate-600">Let's discuss how we can create a powerful social media presence for your brand.</p>
+      <a href="../index.html#contact" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700">Contact Us Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
+      <p>&copy; 2025 The Digital Ace. All rights reserved.</p>
+      <div class="flex space-x-4 mt-4 sm:mt-0">
+        <a href="#"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+        <a href="#"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+        <a href="#"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    lucide.createIcons();
+
+    const counters = document.querySelectorAll('.counter');
+    const speed = 100;
+
+    const animateCounters = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText.replace(/\D/g, '');
+            const inc = Math.ceil(target / speed);
+
+            if (count < target) {
+              counter.innerText = count + inc + (counter.innerText.includes('%') ? '%' : counter.innerText.includes('+') ? '+' : '');
+              setTimeout(updateCount, 30);
+            } else {
+              counter.innerText = target + (counter.innerText.includes('%') ? '%' : counter.innerText.includes('+') ? '+' : '');
+            }
+          };
+          updateCount();
+          observer.unobserve(counter);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(animateCounters, { threshold: 0.3 });
+    counters.forEach(counter => observer.observe(counter));
+  </script>
+</body>
+</html>
